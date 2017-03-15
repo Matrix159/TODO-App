@@ -13,10 +13,10 @@ class App extends React.Component {
         <View>
             <AddTodo />
             <VisibleTodoList />
-
+            <Footer />
         </View>)
     }
 }
-//<Footer />
+//
 
 export default App
