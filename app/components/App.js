@@ -13,10 +13,18 @@ class App extends React.Component {
         <View>
             <AddTodo />
             <VisibleTodoList />
+<<<<<<< HEAD
             <Footer />
         </View>)
     }
 }
 //
+=======
+
+        </View>)
+    }
+}
+//<Footer />
+>>>>>>> origin/master
 
 export default App

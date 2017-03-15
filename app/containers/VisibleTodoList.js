@@ -19,8 +19,13 @@ const dataSource = new ListView.DataSource({
 
 const mapStateToProps = (state) => {
     return {
+<<<<<<< HEAD
         dataSource: dataSource.cloneWithRows(getVisibleTodos(state.todos, state.visibilityFilter))
         //todos: getVisibleTodos(state.todos, state.visibilityFilter)
+=======
+        dataSource: dataSource.cloneWithRows(state.todos),
+        todos: getVisibleTodos(state.todos, state.visibilityFilter)
+>>>>>>> origin/master
     }
 };
 

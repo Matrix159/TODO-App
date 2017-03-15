@@ -25,7 +25,10 @@ class AddTodo extends Component {
                         return;
                    }
                    this.props.dispatch(addTodo(`\u2022 ${this.state.text}`));
+<<<<<<< HEAD
                    this.setState({text: ""});
+=======
+>>>>>>> origin/master
                    console.log(store.getState());
                }}/>
 

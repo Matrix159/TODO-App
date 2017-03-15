@@ -3,7 +3,11 @@
  */
 import { connect } from 'react-redux'
 import { setVisibilityFilter } from '../actions/actions.js'
+<<<<<<< HEAD
 import FilterButton from '../components/FilterButton'
+=======
+import Link from '../components/Link'
+>>>>>>> origin/master
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -14,10 +18,14 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onClick: () => {
+<<<<<<< HEAD
             console.log("Clicked");
 
             dispatch(setVisibilityFilter(ownProps.filter));
             console.log(store.getState());
+=======
+            dispatch(setVisibilityFilter(ownProps.filter))
+>>>>>>> origin/master
         }
     }
 };
@@ -25,6 +33,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 const FilterLink = connect(
     mapStateToProps,
     mapDispatchToProps
+<<<<<<< HEAD
 )(FilterButton);
+=======
+)(Link);
+>>>>>>> origin/master
 
 export default FilterLink
