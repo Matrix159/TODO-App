@@ -18,5 +18,5 @@ class App extends React.Component {
     }
 }
 
-// asdasd 
+// asdasd asdasd
 export default App
