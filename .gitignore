@@ -51,3 +51,6 @@ buck-out/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
+/android/app/my-release-key.keystore
+/android/keystores/debug.keystore.properties
+/android/gradle.properties
