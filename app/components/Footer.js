@@ -3,7 +3,6 @@
  */
 import React from 'react'
 import {Text, View} from 'react-native'
-import {Text} from 'react-native'
 import FilterLink from '../containers/FilterLink'
 
 class Footer extends React.Component {
@@ -11,8 +10,8 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <View style={{flexDirection: "row", justifyContent: "space-between"}}>
-                <FilterLink filter="SHOW_ALL">
+            <View style={{flexDirection: "row", justifyContent: "space-between", height:45}}>
+                <FilterLink filter="SHOW_ALL" >
                     All
                 </FilterLink>
 

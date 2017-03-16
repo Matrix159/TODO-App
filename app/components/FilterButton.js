@@ -2,7 +2,7 @@
  * Created by Eldridge on 3/14/2017.
  */
 import React, {PropTypes} from 'react'
-import {Button} from 'react-native'
+import {Button, View} from 'react-native'
 
 class FilterButton extends React.Component {
 
@@ -13,7 +13,9 @@ class FilterButton extends React.Component {
 
     render() {
         return (
+            <View style={{flex:1, padding:5}}>
             <Button title={this.props.children} onPress={this.props.onClick}  color={this.props.active ? "green" : "#841584"}/>
+            </View>
         )
     }
 

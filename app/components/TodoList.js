@@ -3,7 +3,7 @@
  */
 import React, {PropTypes} from 'react'
 import Todo from './Todo'
-import {ListView, StyleSheet} from 'react-native'
+import {ListView, StyleSheet, View} from 'react-native'
 class TodoList extends React.Component {
 
     constructor(props) {
@@ -13,10 +13,11 @@ class TodoList extends React.Component {
 
     render() {
         return (
+            <View style={{flex:4}}>
             <ListView  dataSource={this.props.dataSource} renderRow={(rowData) => <Todo {...rowData}
             onClick={() => {
                 this.props.onTodoClick(rowData.id);
-            }}/>}/>)}
+            }}/>}/></View>)}
 
 }
 const styles = StyleSheet.create({

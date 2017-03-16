@@ -20,7 +20,9 @@ const style = StyleSheet.create({
             color: "black",
             paddingLeft: 16,
             borderWidth: 2,
-            marginBottom: 4
+            marginBottom: 4,
+            marginLeft: 4,
+            marginRight: 4
         }
 });
 Todo.propTypes = {

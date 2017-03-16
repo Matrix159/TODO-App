@@ -8,13 +8,13 @@ import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 
 class App extends React.Component {
-    render(){
-    return (
-        <View>
-            <AddTodo />
-            <VisibleTodoList />
-            <Footer />
-        </View>)
+    render() {
+        return (
+            <View style={{flexDirection: "column", justifyContent:"space-between", flex:1}}>
+                <AddTodo />
+                <VisibleTodoList />
+                <Footer />
+            </View>)
     }
 }
 

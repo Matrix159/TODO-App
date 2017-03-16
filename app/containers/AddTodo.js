@@ -10,12 +10,12 @@ class AddTodo extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {text: "Enter TODO here."}
+        this.state = {text: ""}
     }
 
     render() {
         return (
-            <TextInput value={this.state.text}
+            <TextInput value={this.state.text} style={{height: 50}}
                onChangeText={(text) => {console.log("Change text");this.setState({text})}}
                onSubmitEditing={() =>
                {
@@ -25,11 +25,7 @@ class AddTodo extends Component {
                         return;
                    }
                    this.props.dispatch(addTodo(`\u2022 ${this.state.text}`));
-<<<<<<< HEAD
                    this.setState({text: ""});
-=======
->>>>>>> origin/master
-                   console.log(store.getState());
                }}/>
 
         )
